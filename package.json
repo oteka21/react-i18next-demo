@@ -1,0 +1,33 @@
+{
+  "name": "react-i18next-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@alienfast/i18next-loader": "^1.0.18",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "i18next": "^17.0.12",
+    "i18next-xhr-backend": "^3.1.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-i18next": "^10.12.2"
+  }
+}

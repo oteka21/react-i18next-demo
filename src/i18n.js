@@ -5,14 +5,16 @@ import "../locales"
 
 i18n
   .use(Backend)
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next)
   .init({
+    debug: true,
     lng: "en",
-    fallbackLng: "fr",
-    keySeparator: false, // we do not use keys in form messages.welcome
-
+    fallbackLng: 'fr',
+    ns: ['common'],
+    defaultNS: "common",
+    keySeparator: false,
     interpolation: {
-      escapeValue: false // react already safes from xss
+      escapeValue: false
     },
     backend: {
         loadPath: '/locales/{{lng}}/{{ns}}.json'

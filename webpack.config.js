@@ -16,14 +16,13 @@ var config = {
                         presets: ['@babel/preset-env', '@babel/preset-react']
                     }
                 }
-            },
-            {
-                test: /locales/,
-                loader: '@alienfast/i18next-loader',
-                // options here
-                //query: { overrides: [ '../node_modules/lib/locales' ] }
             }
         ]
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
     },
     plugins: [
         new HtmlWebpackPlugin({

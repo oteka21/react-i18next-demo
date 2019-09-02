@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-var config = {
+const config = {
     entry: ['@babel/polyfill','./src/index.js'],
     output: {
         filename: 'app.budle.js'
@@ -35,6 +35,7 @@ var config = {
 }
   
   module.exports = (env, argv) => {
+      console.log(argv.mode, env)
     if (argv.mode === 'development') {
         config.mode = 'development'
         return config
@@ -47,3 +48,4 @@ var config = {
   
     return config;
   };
+
